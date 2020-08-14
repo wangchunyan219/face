@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.a11630.face_new"
+    android:versionCode="2"
+    android:versionName="2.0"
+    tools:ignore="GradleOverrides">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--写入SD卡的权限：如果你希望保存相机拍照后的照片-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取SD卡的权限:打开相册选取图片所必须的权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--网络-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".in"
+            android:label="注册">
+        </activity>
+        <activity
+            android:name=".daka_in"
+            android:label="登录">
+        </activity>
+        <activity
+            android:name=".identity"
+            android:label="身份验证">
+        </activity>
+        <activity
+            android:name=".delete"
+            android:label="删除">
+        </activity>
+        <activity
+            android:name=".opt"
+            android:label="打卡">
+        </activity>
+        <activity
+            android:name=".stu_seacher"
+            android:label="学生查询">
+        </activity>
+        <activity
+            android:name=".tea_seacher"
+            android:label="教师查询">
+        </activity>
+        <activity
+            android:name=".xiugai"
+            android:label="修改密码">
+        </activity>
+        <activity
+            android:name=".item"
+            android:label="全部人脸信息">
+        </activity>
+        <activity
+            android:name=".item1"
+            android:label="全部打卡信息">
+        </activity>
+
+    </application>
+
+</manifest>
